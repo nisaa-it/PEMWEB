@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Berita</title>
+    <style>
+        body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    background: #f5f6fa;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #0077b6, #0096c7);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+nav {
+    background: #023e8a;
+    padding: 14px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    color: white;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 4px;
+}
+nav a:hover {
+    color: #ffd60a;
+    border-bottom: 2px solid #ffd60a;
+}
+
+main {
+    display: flex;
+    padding: 25px;
+    max-width: 1100px;
+    margin: auto;
+    gap: 25px;
+}
+
+article {
+    flex: 3;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+article h2 {
+    color: #0077b6;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+article p {
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+aside {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+aside h3 {
+    margin-top: 0;
+    color: #023e8a;
+    border-bottom: 2px solid #0096c7;
+    padding-bottom: 5px;
+}
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 20px;
+}
+aside ul li {
+    margin-bottom: 12px;
+}
+aside ul li a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+aside ul li a:hover {
+    color: #ff6b6b;
+    text-decoration: underline;
+}
+
+footer {
+    background: #023e8a;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 25px;
+    font-size: 14px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portal Berita Kampus</h1>
+    </header>
+
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Nasional</a>
+        <a href="#">Olahraga</a>
+        <a href="#">Teknologi</a>
+        <a href="#">Hiburan</a>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Acara Dies Natalis ke-64 Kampus Meriah</h2>
+            <p><strong>Tanggal:</strong> 3 September 2025 | <strong>Penulis:</strong> Nisa</p>
+            <p>
+                Perayaan Dies Natalis ke-64 kampus berlangsung dengan meriah di aula utama. 
+                Acara ini dihadiri oleh ribuan mahasiswa, dosen, dan alumni. 
+                Berbagai rangkaian kegiatan dilaksanakan, mulai dari seminar akademik, 
+                pameran karya mahasiswa, hingga konser musik.
+            </p>
+            <p>
+                Rektor kampus menyampaikan apresiasi tinggi kepada seluruh pihak yang terlibat 
+                dan menegaskan komitmen kampus untuk terus meningkatkan kualitas pendidikan, 
+                penelitian, serta kontribusi bagi masyarakat.
+            </p>
+        </article>
+
+        <aside>
+            <h3>Baca Juga</h3>
+            <ul>
+                <li><a href="https://www.its.ac.id/news/2025/08/17/tim-robotika-its-borong-16-prestasi-di-kancah-internasional/">Tim Robotika ITS Borong 16 Prestasi di Kancah Internasional</a></li>
+                <li><a href="https://www.its.ac.id/news/2025/04/28/inovasikan-pupuk-ramah-lingkungan-tim-mahasiswa-its-raih-juara-di-ui/">Inovasikan Pupuk Ramah Lingkungan, Tim Mahasiswa ITS Raih Juara di UI</a></li>
+                <li><a href="https://www.its.ac.id/news/2025/09/01/bravo-spektronics-its-sabet-dua-juara-kompetisi-nasional/">Bravo, Spektronics ITS Sabet Dua Juara Kompetisi Nasional</a></li>
+            </ul>
+            <h3>Temukan Kami</h3>
+            <p>
+        <a href="https://www.instagram.com/its_campus?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" 
+                 alt="Instagram" 
+                 width="40" 
+                 height="40">
+        </a>
+
+        <a href="https://www.youtube.com/user/itseurekatv" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" 
+                 alt="YouTube" 
+                 width="40" 
+                 height="40">
+        </a>
+    </p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Portal Berita Kampus | Semua Hak Dilindungi</p>
+    </footer>
+</body>
+</html>

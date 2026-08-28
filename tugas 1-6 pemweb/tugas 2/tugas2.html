@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffe6f0, #ffffff);
+            color: #444;
+        }
+        header {
+            background: linear-gradient(90deg, #ff99cc, #ffccdd);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            align-items: start;
+        }
+        .profile-pic {
+            text-align: center;
+        }
+        .profile-pic img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #ff99cc;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        section {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        section h2 {
+            margin-top: 0;
+            color: #d63384;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        footer {
+            background: linear-gradient(90deg, #ff99cc, #ffccdd);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #d63384;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #ff4da6;
+        }
+        /* Responsif */
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .profile-pic img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Profil Pribadi</h1>
+    </header>
+
+    <main>
+        <div class="profile-pic">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Pemandangan_Gunung_Bromo.jpg/1200px-Pemandangan_Gunung_Bromo.jpg" alt="Foto Profil">
+        </div>
+
+        <section>
+            <h2>Halo, Saya Erlinda Annisa</h2>
+            <p>Saya seorang mahasiswa baru dengan NRP 5027241108 yang suka belajar hal-hal baru, terutama di bidang teknologi dan organisasi kampus. Saya bersemangat untuk mengembangkan keterampilan saya dan aktif berkontribusi dalam kegiatan akademik maupun non-akademik.</p>
+            
+            <article>
+                <h2>Hobi Saya</h2>
+                <ul>
+                    <li>Membaca novel</li>
+                    <li>Mendengarkan musik</li>
+                    <li>Menulis catatan</li>
+                    <li>Ikut kegiatan organisasi</li>
+                </ul>
+            </article>
+
+            <article class="social-links">
+                <h2>Media Sosial</h2>
+                <a href="https://www.instagram.com/erlinda.annisa/?utm_source=ig_web_button_share_sheet">Instagram</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Erlinda Annisa</p>
+    </footer>
+</body>
+</html>

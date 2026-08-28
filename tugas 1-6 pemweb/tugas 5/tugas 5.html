@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Gambar Sederhana</title>
+    <style>
+        body {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #ffe6f0, #fff);
+}
+
+h1 {
+    margin-bottom: 25px;
+    color: #d63384;
+    text-shadow: 1px 1px #ffd6e8;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* tetap 2 kolom */
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+figure {
+    border: none;
+    padding: 12px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+figure:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(255, 105, 180, 0.2);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #b03060;
+    font-size: 14px;
+}
+    </style>
+</head>
+<body>
+
+    <h1>Galeri Gambar Sederhana</h1>
+
+    <div class="gallery">
+        <figure>
+            <img src="https://via.placeholder.com/150" alt="Gambar 1">
+            <figcaption>Deskripsi Gambar 1</figcaption>
+        </figure>
+        <figure>
+            <img src="https://via.placeholder.com/150" alt="Gambar 2">
+            <figcaption>Deskripsi Gambar 2</figcaption>
+        </figure>
+        <figure>
+            <img src="https://via.placeholder.com/150" alt="Gambar 3">
+            <figcaption>Deskripsi Gambar 3</figcaption>
+        </figure>
+        <figure>
+            <img src="https://via.placeholder.com/150" alt="Gambar 4">
+            <figcaption>Deskripsi Gambar 4</figcaption>
+        </figure>
+    </div>
+
+</body>
+</html>
